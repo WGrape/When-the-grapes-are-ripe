@@ -1,3 +1,3 @@
 ## VideoPlayer
-VideoPlayer：The Web Video Player of Most Browsers Compatible.
+VideoPlayer 视频播放器实现及内核解析
 
