@@ -4,20 +4,19 @@
 <img src="https://img.shields.io/badge/language-JavaScript-red.svg">
 <img src="https://img.shields.io/badge/platform-web-orange.svg">
 <img src="https://img.shields.io/badge/version-1.0-blue.svg">
-<img src="https://img.shields.io/badge/license-MIT-black.svg">
 </p>
 
-利用原生 JavaScript 实现动态打字写信（Writting a Dynamic Letter By JavaScript Without Libraries）
-[立即使用](#article-usage)
-## ♨ 介绍( Introduction )
+利用原生 JavaScript 实现动态打字写信
 
-<img src="https://github.com/Lvsi-China/WriteALetter/raw/master/images/logo.gif">
+## 介绍
+
+<img src="./images/logo.gif">
 
 **强调 ：重要的核心代码只有十几行左右，只要看懂了实现动态打字的原理，你就能快速切换并应用到其他的应用场景中，比如各种前端页面效果，只要你会写代码，你就能自己加入更多自己喜欢的特效 ！！！**<br><br>
-鄙人时间精力有限，就先弄个最简单的了，而且毕竟不是做美工的，所以，样式做的比较粗糙，不过以后有新的想法的时候会不断的更新。
+目前版本样式做的比较粗糙，不过以后有新的想法的时候会不断的更新。
 还是那句话：核心代码就十几行，自己可以选择应用到不同的场景中，并实现更多炫酷的效果 ！！
 
-## <span id="article-usage">♗ 使用（Usage）</span>
+## 使用
 
 > 1. 下载项目到本地
 > 2. 配置 ```config.js``` 文件，配置信息如下
@@ -40,7 +39,7 @@ var config = {
 ```
 > 3. 配置完之后，直接运行 index.html 文件即可。
 
-## ✪ 功能( Features )
+## 功能
 1. 自定义写一篇文章，文件后缀名 .txt 即可。
 2. 上传文件，利用H5新API自动读取文件。
 3. JavaScript以动态打字的特效输出每一个文字。
@@ -48,7 +47,7 @@ var config = {
 5. 更多的特效，只要是你喜欢的，你都可以自己实现 ！！
 6. ... ...
 
-## ♚ 代码( Code )
+## 代码
 
 1. 其实，主要不容易解决的地方在于如何一个一个的输出文字，一般来说必须使用 setTimeout() 和 setInterval()，但是写的时候，有很多种实现方式，稍不注意，就会出现这种情况：在使用多个 ```setInterval()```的时候，你还会发现输出的文字是乱序的，这就需要想办法去解决乱序问题，或者用其他方法替代，其实能实现的方法还是比较多的。各位大胆设想并实践即可。
 
@@ -58,7 +57,4 @@ var config = {
 
 4. 另外，本项目还用到了 H5 的新特性，使用了 [FileReader](https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader) API，请自行去官网查看。 参考 : [Using files from web applications](https://developer.mozilla.org/zh-CN/docs/Web/API/File/Using_files_from_web_applications)
 
-## ➤ 说明
-
-仅为娱乐而已，不要较真。觉得样式不好看的朋友，可以自己 fork 下来，按照自己的意愿设计即可。
 

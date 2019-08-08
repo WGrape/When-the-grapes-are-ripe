@@ -1,12 +1,10 @@
 # Rhino
 Rhino：Write down the different notes of conceptions.
 
-## ♨ 介绍
+## 介绍
 遗忘不可避免，学的越多，忘的也越多越快，知识点总结，以便快速的回忆起来。
 
-- [简历准备](./面试准备/简历准备.md)
-
-## ✪ 总结
+## 总结
 
 1. #### 前端
 	- [HTML+CSS专题](./前端/html+css.md)
