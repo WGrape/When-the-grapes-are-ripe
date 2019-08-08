@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+ 	<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+
+	<div id="Main">
+
+		<div id="Head">
+
+			<section id="Left">
+				<p><span style="font-weight: bold;font-size:18px;">To</span> ~ <span id="Name"></span></p>
+			</section>
+
+			<section id="Right">
+				<label for="FileInputTag">Upload</label>
+				<input type="file" id="FileInputTag" style="display: none;" />
+			</section>
+
+		</div>
+	
+		<div id="Body">
+			<article>
+				<div id="Letter"></div>
+			</article>
+		</div>
+
+	</div>
+
+	<div id="SideBar" style="display: none;">
+		<div>
+			
+			<p style="border-bottom: 1px dashed #FCFC;padding-bottom: 10px;margin-bottom: 10px;">Lines: <span id="Counter_lines"></span></p>
+			<p>Words: <span id="Counter_words"></span></p>
+
+		</div>
+	</div>
+
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+<script type="text/javascript" src="./js/robot.js"></script>
+<script type="text/javascript" src="./js/config.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+
+</html>

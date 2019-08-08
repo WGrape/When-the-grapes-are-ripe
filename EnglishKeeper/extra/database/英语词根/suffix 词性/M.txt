@@ -1,0 +1,5 @@
+-metry
+-meter 相称，测量工具
+
+    thermometer 温度计; 体温表
+

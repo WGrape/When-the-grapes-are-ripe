@@ -1,0 +1,115 @@
+*{
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+
+		#Main{
+
+			width: 60%;
+			margin: 30px auto;
+			border: 1px solid #ddd;
+		    border-radius: 10px;
+		    margin-bottom: 80px;
+		}
+
+			#Head{
+
+				height: 50px;
+			    border-bottom: 1px solid #ddd;
+			    line-height: 50px;
+			    padding: 10px;
+			    text-align: right;
+			}
+
+
+				#Left,#Right{
+
+					display: inline-block;
+				}
+
+				#Left{
+
+					width: 70%;
+					text-align: left;
+				}
+				
+				#Right{
+
+					width: 29%;
+				}
+
+
+				label{
+
+					display: inline-block;
+					width: 100px;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					font-size:13px;
+					background:#555;color:#FFF;border-radius:5px;
+					cursor: pointer;
+				}label:hover{
+
+					background: #000;
+				}
+			#Body{
+
+		
+			}
+
+				article{
+
+					padding:20px;
+					background: #FAFAFA;
+					min-height:100px;
+				    border-bottom-left-radius: 10px;
+    				border-bottom-right-radius: 10px;
+				}
+
+					#Letter{
+
+						line-height: 19px;
+						letter-spacing:1.5px;
+					    font-size: 15px;
+					}
+
+						#Letter .p{
+
+							height: 39px;
+							line-height: 53px;
+							color: #777;
+							border-bottom: 1px dashed #ddd;
+							padding-bottom: 5px;
+						}
+						#Letter .p.odd{
+
+							color:#222;
+						}
+						#Letter .p.writting{
+
+							color:#0095ff;
+						}
+
+
+						#Inscribe{
+
+							padding-top:20px;
+							text-align: right;
+						}
+
+	#SideBar{
+
+	    position: fixed;
+	    top: 28px;
+	    right: 100px;
+	    background: brown;
+	    color: #FFF;
+	    font-size: 15px;
+	    padding: 15px;
+	    border-radius: 7px;
+	    opacity: 0.9
+	}

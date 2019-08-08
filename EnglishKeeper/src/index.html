@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/wordCloud/wordCloud.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body >
+
+
+	<div id="Container">
+	
+		<section id="Head">
+			
+			<div id="Left">
+				<p style="height: 100%;line-height: 70px;font-size: 20px;text-indent: 10px;"><b style="font-family: Lora,'Times New Roman',serif;font-size: 24px;"><a href="/">EnglishKeeper</a></b></p>
+			</div>
+
+			<div id="Right">
+				<button id="Menu" data-task-count="0">
+					<i class="fas fa-bars" style="font-size: 25px;"></i>
+				</button>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="Bottom">
+				<ul class="option-list">
+					<li class="option option-phrase" data-option-name="home" data-option="getPhrase" style="background: #673ab7;">Home</li>
+
+					<li class="option option-vocabulary" data-option-name="vocabulary" data-option="getVocabulary" style="background: #03a9f4;">Vocabulary</li>
+
+					<li class="option option-phrase" data-option-name="phrase" data-option="getPhrase" style="background: #f44336;">Phrase</li>
+				</ul>
+			</div>
+
+		</section>		
+
+		<section id="Body">
+
+			<div class="view-for-option" data-option-name="home" style="text-align:center; margin-top:100px; font-family: Lora,'Times New Roman',serif;font-size: 22px;">Welcome to Your Memory</div>
+			
+			<div class="view-for-option" data-option-name="vocabulary" style="display:none;">
+				<div id="WordCloud">
+					<section style="display:none;">
+						<audio preload autoplay loop>
+				    </section>
+					<section class="head" style="height:auto;min-height:20px;">
+						<i class="fas fa-volume-down" style="width:27px;"></i>释义：
+						<span class="explain" style="color: #777;"></span></section>
+					<section class="body">
+						<div style="background: #000;width: 100%;height: 100%;">
+							<div class="container">
+			
+			
+							</div>
+						</div>
+					</section>
+					<section class="shoe">
+						<div>
+							<input class="word-input" placeholder="输入单词 释义以1个空格为分隔符" > 
+							<button class="get-button" style="width: 80px;">获取词库</button>
+							<button class="add-button">添加</button> 
+							<button class="delete-button">删除</button>
+						</div>
+
+						<ul>
+							<li>如果是获取词库，在输入框内输入打头的字母即可。</li>
+							<li>获取/添加/删除的单词都在这一个输入框内填写，如果添加单词，则需要以1个空格为分隔符，在后输入单词的释义。</li>
+							<li>如果是添加单词，输入框内点击回车键即可。否则必须点击删除按钮</li>
+							<li>除空格外，不能输入其他如引号之类的特殊字符</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+
+			<div class="view-for-option" data-option-name="phrase" style="display:none;">				
+				<div id="Phrase">
+					<ul class="sentence-container"></ul>
+					
+					<section class="shoe">
+							<div>
+								<input class="word-input" placeholder="输入短语 释义以1个#号为分隔符" > 
+								<button class="get-button" style="width: 90px;">获取短语库</button>
+								<button class="add-button">添加</button> 
+								<button class="delete-button">删除</button>
+							</div>
+	
+							<ul>
+								<li>如果是获取词库，在输入框内输入打头的字母即可。</li>
+								<li>获取/添加/删除的单词都在这一个输入框内填写，如果添加单词，则需要以1个空格为分隔符，在后输入单词的释义。</li>
+								<li>如果是添加单词，输入框内点击回车键即可。否则必须点击删除按钮</li>
+								<li>除空格外，不能输入其他如引号之类的特殊字符</li>
+							</ul>
+					</section>
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="Foot">
+			<p style="font-size: 13px;text-align: center;">&copy; By <a href="github.com/Lvsi-China">Lvsi-China</a></p>
+		</section>
+
+	</div>
+
+
+</body>
+
+
+<script type="text/html" id="TemplateOfOptions" >
+</script>
+
+<script src="https://cdn.bootcss.com/jquery/1.12.0/jquery.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+<script type="text/javascript" src="./js/WordCloud/WordCloud.js" ></script>
+<script src="./js/view.js" ></script>
+<script type="text/javascript">
+	var view = new window.View();
+	view.init();
+</script>
+
+</html>

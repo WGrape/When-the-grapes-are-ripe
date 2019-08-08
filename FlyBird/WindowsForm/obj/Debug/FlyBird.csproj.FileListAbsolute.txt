@@ -1,0 +1,15 @@
+D:\Visual Studio\workspace\learning\FlyBird\bin\Debug\FlyBird.exe.config
+D:\Visual Studio\workspace\learning\FlyBird\bin\Debug\FlyBird.exe
+D:\Visual Studio\workspace\learning\FlyBird\bin\Debug\FlyBird.pdb
+D:\Visual Studio\workspace\learning\FlyBird\obj\Debug\FlyBird.csprojAssemblyReference.cache
+D:\Visual Studio\workspace\learning\FlyBird\obj\Debug\FlyBird.Form1.resources
+D:\Visual Studio\workspace\learning\FlyBird\obj\Debug\FlyBird.Properties.Resources.resources
+D:\Visual Studio\workspace\learning\FlyBird\obj\Debug\FlyBird.csproj.GenerateResource.cache
+D:\Visual Studio\workspace\learning\FlyBird\obj\Debug\FlyBird.csproj.CoreCompileInputs.cache
+D:\Visual Studio\workspace\learning\FlyBird\obj\Debug\FlyBird.exe
+D:\Visual Studio\workspace\learning\FlyBird\obj\Debug\FlyBird.pdb
+D:\Visual Studio\workspace\learning\FlyBird\obj\Debug\FlyBird.Form2.resources
+D:\Visual Studio\workspace\learning\FlyBird\bin\Debug\FlyBird.exe.manifest
+D:\Visual Studio\workspace\learning\FlyBird\bin\Debug\FlyBird.application
+D:\Visual Studio\workspace\learning\FlyBird\obj\Debug\FlyBird.exe.manifest
+D:\Visual Studio\workspace\learning\FlyBird\obj\Debug\FlyBird.application

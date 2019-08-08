@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		*{
+
+			margin: 0;
+			padding:0;
+			border:0;
+		}
+		#DOM{
+
+			font-size:9px;
+		}
+
+		.frame{
+
+			display: inline-block;
+			width:400px;
+			height:350px;
+			padding:5px;
+			background:#FCFCFC;
+			border-top:1px solid #ddd;
+		}
+
+		.frame img, .frame canvas{
+
+			max-width:400px;
+			max-height:350px;
+		}
+
+		#LeftFrame{
+			
+			border-right: 1px solid #ddd;
+			margin-right:20px;
+			float: left;
+		}
+
+		#RightFrame{
+	
+			border-left: 1px solid #ddd;
+		    background: #FFF;
+		    float: right;
+		    text-align: right;
+		    overflow: auto;
+		}
+
+		#ControlPannel{
+
+			width:100%;
+			/*margin-top:10px;*/
+			background: #F5F5F5;
+			padding: 20px 0;
+			text-align: center;
+			border-top:1px solid #ddd;
+		}
+
+		label,button{
+
+			display: inline-block;
+			margin:0 auto;
+			width: 100px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			border-radius:5px;
+			border:none;
+			background:#333;
+			color: #FFF;
+			font-size:10px;
+			cursor: pointer;
+		}label:hover{
+
+			background: #000;
+			cursor: pointer;
+		}
+
+		#AsciiTextButton{
+
+			margin-left: 17px;
+			margin-right: 17px;
+			background: #00BFFF;
+		}#AsciiTextButton:hover{
+
+			background: #00CFFF;
+		}#AsciiTextButton[disabled]:hover{
+
+			background: #00BFFF;
+		}
+
+
+		#AsciiTextButton[disabled], #InverseButton[disabled], #GreyButton[disabled]{
+
+			cursor: not-allowed;
+			opacity:0.5;
+		}
+
+
+		#InverseButton{
+
+			background: #FF5555;
+			margin-right: 17px;
+		}#InverseButton:hover{
+
+			background: #FF0033;
+		}#InverseButton[disabled]:hover{
+
+			background: #FF5555;
+		}
+
+		#GreyButton{
+
+			background: #9966FF;
+		}#GreyButton:hover{
+
+			background: #9900FF;
+		}#GreyButton[disabled]:hover{
+
+			background: #9966FF;
+		}
+
+		.hidden{
+
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div style="width: 850px;    margin: 20px auto;border: 1px solid #ddd;">
+
+		<div><p style="background: #F5F5F5;padding:15px 0;text-align: center;font-size:18px;">The Sun Also Rises</p></div>
+		
+		<div style="overflow: hidden;">
+			<div id="LeftFrame" class="frame" >
+				<img id="OriginalImg" >
+			</div>
+
+			<div id="RightFrame" class="frame">
+
+				<img id="AsciiImg" class="hidden">
+				<pre id="AsciiPre" class="hidden"></pre>
+				<canvas id="Canvas" class="hidden" ></canvas>
+			
+			</div>
+		</div>
+
+		<div id="ControlPannel">
+
+			<label for="ImgInputTag" id="Label">Upload</label>
+			<input id="ImgInputTag" type="file" style="display:none;">
+
+			<button id="AsciiTextButton"   data-img-name="" data-action="ascii-text"   disabled>Ascii Text</button>
+			<!-- <button id="AsciiImgButton"   data-img-name="" data-action="ascii-img"   disabled>Ascii Img</button> -->
+			<button id="InverseButton" data-img-name="" data-action="inverse" disabled>Inverse</button>
+			<button id="GreyButton"    data-img-name="" data-action="grey" 	  disabled>Grey</button>
+
+		</div>
+
+	</div>
+
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/2.0.2/jquery.js"></script>
+<script type="text/javascript" src="./js/CanvasConvertPkg.js"></script>
+<script type="text/javascript" src="./js/convert.js"></script>
+<script type="text/javascript" src="./js/upload.js"></script>
+
+</html>

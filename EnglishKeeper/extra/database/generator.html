@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="div"></div>
+
+</body>
+<script>
+
+
+    var startNumber = 126; // 起始数
+    var step = 5; // 步伐
+    var times = 100; // 执行次数
+
+    var str = "";
+
+    var i = 1 ;
+    while(i<=times){
+
+        str = str + ( "--------------------------" + startNumber + "-" + (startNumber+4) + "-start------------------------->" );
+        str = str + "<br><br>";
+        str = str + ( "<--------------------------" + startNumber + "-" + (startNumber+4) + "-end-------------------------" );
+        str = str + "<br><br><br>" ;
+
+        ++i;
+        startNumber = startNumber+5;
+    }
+
+
+    document.getElementById("div").innerHTML=str;
+
+</script>
+</html>

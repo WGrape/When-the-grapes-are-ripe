@@ -1,0 +1,142 @@
+#WordCloud{
+
+	width: 700px;
+	margin:30px auto;
+	min-height: 300px;
+	border: 1px solid #ddd;
+}
+
+
+	#WordCloud .head{
+
+		height: 60px;
+	    border-bottom: 1px solid #ddd;
+	    padding: 15px;
+	}
+		#WordCloud .head .left{
+
+			width: 200px;
+			height: 100%;
+			text-align: left;
+			display: block;
+			float: left;
+		}
+
+		#WordCloud .head .right{
+
+			text-align: right;
+			width: 380px;
+			height: 100%;
+			display: block;
+			float: right;
+		    line-height: 70px;	
+		}
+
+		#WordCloud .head .right .wordInput{
+
+		    padding: 10px;
+		    border: 1px solid #ddd;
+		    border-radius: 5px;
+		}
+
+		#WordCloud .head .right .addWordButton, #WordCloud .head .right .uploadWordButton{
+
+			background:#74d058;
+			display: inline-block;
+			width: 70px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: #FFF;
+			border-radius: 5px;    
+			margin-left: 10px;
+		}#WordCloud .head .right .addWordButton:hover, #WordCloud .head .right .uploadWordButton:hover{
+
+			background: #34d058;
+			cursor: pointer;
+		}
+		#WordCloud .head .right .addWordButton:disabled{
+
+			background: grey;
+		}#WordCloud .head .right .addWordButton:disabled:hover{
+
+			cursor: not-allowed;
+			background: grey;
+		}
+
+		#WordCloud .head .right .uploadWordButton{
+
+			background: #587aa0;
+			font-size: 13px;
+		}#WordCloud .head .right .uploadWordButton:hover{
+
+			background: #587dd0;
+			cursor: pointer;
+		}
+
+
+	#WordCloud .body{
+
+		height:400px;
+		padding: 15px;
+	}
+
+		#WordCloud .body .container{
+
+		    width: 100%;
+		    background: #000;
+		    height: 100%;
+	        overflow: hidden;
+		}
+
+			#WordCloud .body .container .word{
+
+				position:absolute;
+				color: #FFF;
+				margin:10px;
+				animation: myRotate 8s infinite;
+			}
+
+			#WordCloud .body .container .word.large{
+
+		        z-index: 2;
+			    position: absolute;
+			    display: inline-block;
+			    background: rgba(0,0,0,0.6);
+			    text-align: center;
+			    margin-top: 130px;
+			    width: 650px;
+			    animation: breath 5s infinite;
+			}
+
+	#WordCloud .foot{
+
+		height: 20px;
+		padding: 15px;
+		border-top:1px solid #ddd;
+	}
+
+
+
+.animate {
+
+	animation: myRotate 3s;
+}
+
+@keyframes myRotate{
+
+	0% {transform:rotateY(0deg) }
+
+	50% {transform:rotateY(360deg) }
+
+	100% {transform:rotateY(-360deg) }
+}
+
+@keyframes breath{
+
+	0% { font-size: 50px;margin-top: 50px; }
+
+	50% { font-size: 45px;margin-top: 95px; }
+
+	100% { font-size: 50px;margin-top: 130px; }
+}

@@ -1,0 +1,174 @@
+*{
+
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+a{
+
+	text-decoration: none;
+}a:hover{
+
+	text-decoration: underline;
+}
+
+
+ul{
+
+	padding:20px 15px;
+}
+
+li{
+
+	font-size:14px;
+	color:#888;
+	list-style: decimal;
+	padding:5px 0;
+}
+.clear{
+
+	clear: both;
+}
+
+
+#Container{
+
+	width: 1000px;
+	min-height:300px;
+	margin:30px auto;
+	border:1px solid #ddd;
+}
+
+	#Head{
+
+		min-height: 70px;
+		background: #FFF;
+		overflow: hidden;
+		padding:10px;
+		border-bottom: 1px solid #ddd;
+	}
+
+		#Left{
+
+			width: 600px;
+			height: 100%;
+			text-align: left;
+			display: inline-block;
+			float: left;
+		}
+
+		#Right{
+
+			text-align: right;
+			width: 380px;
+			height: 100%;
+			display: inline-block;
+			float: right;
+		    line-height: 70px;	
+		}
+
+			#Right button#Menu{
+
+				width: auto;
+				background: #FFF;
+				cursor: pointer;
+				padding: 20px;
+				border-radius: 100px;
+				border:1px solid #FFF;
+				outline: none;
+			}#Right button#Menu:hover{
+
+				background: #FAFAFA;
+			}#Right button#Menu.click{
+
+				border-color:#ddd;
+			}
+
+		#Bottom{
+
+			display: none;
+		}
+
+			#Bottom .option-list{
+
+			    border-top: 1px solid #ddd;
+				padding: 10px 0;
+				text-align: center;
+			}
+
+				#Bottom .option-list .option{
+
+					display: inline-block;
+					list-style: none;
+					height: 100px;
+					line-height: 100px;
+					width: 100px;
+					color: #FFF;
+					border-radius: 5px;
+					text-align: center;
+					opacity: .9;
+					padding:0;
+					font-size: 13px;
+					letter-spacing: 0.5px;
+					margin-right: 10px;
+					border-radius: 1000px;
+				}#Bottom .option-list .option:hover{
+
+					opacity: 1;	
+					cursor: pointer;
+				}
+	#Body{
+
+		min-height: 300px;
+		background: #FAFAFA;
+		padding:10px;
+	}
+
+
+		
+		#Body .view-for-option .shoe{
+
+			padding: 15px;
+			border-top: 1px solid #ddd;
+		}
+
+		#Body .view-for-option .shoe input{
+
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			width:300px;
+			height: 40px;
+			padding-left: 10px;
+		}
+
+		#Body .view-for-option .shoe button{
+
+			width: 70px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: #FFF;
+			background: #8bc34a;
+			margin-left: 10px;
+			border-radius: 5px;
+			opacity: 0.9;
+		}#Body .view-for-option .shoe button:hover{ opacity: 1;cursor: pointer; }
+		#Body .view-for-option .shoe button.delete-button{
+
+			background: #ff5722;
+		}
+		#Body .view-for-option .shoe button.get-button{
+
+			background: #03a9f4;
+		}
+		
+
+	#Foot{
+
+		height: 30px;
+		background: #FFF;
+		border-top: 1px solid #ddd;
+		padding:10px;
+	}
+

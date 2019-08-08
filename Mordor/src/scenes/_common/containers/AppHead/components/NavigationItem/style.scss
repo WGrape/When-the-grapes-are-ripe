@@ -1,0 +1,45 @@
+.navigationItem{
+
+	height:65px;
+	line-height:65px;
+	text-align: center;
+  
+  *{
+
+    vertical-align:middle;
+  }
+
+  .logo{
+
+    text-align:left;
+  	
+    .text{
+
+        font-size: 25px;font-weight:bold;
+        text-indent: 10px;
+    }
+  }
+
+  .btn-menu{
+
+    outline:none;
+    cursor:pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background:#FFF;
+
+    .icon{
+
+      font-size: 20px;
+      color: #555;
+    }
+  }
+
+  .btn-menu.active{
+
+    background:#eee;
+  }
+  
+
+}
