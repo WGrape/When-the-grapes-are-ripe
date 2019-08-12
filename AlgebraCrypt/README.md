@@ -19,13 +19,15 @@ AlgebraCrypt : Random reversible encryption from integer to hash value
 
 2. 辗转相除法
 
-3. 质数 / 同余 / 整除 / 无理数 /
+3. 质数 / 同余 / 整除
 
 4. 凯撒密码数学公式 En(x) = (x+n) mod 26 , Dn(x)=(x−n)mod26 . En为加密方法, Dn为解密方法
 
 5. 散列函数 ( Hash 算法 )
 
 6. 矩阵加密
+
+7. 无理数加密 / 多项式加密
 
 ## 参考
 
