@@ -117,8 +117,8 @@ class Naja
     // 通过影响率公式得出未来时间的价格影响率, [0,1] 是其所在范围, 其中 [0, 0.499] 是正常范围, [0.5,1] 是异常范围
     public function computeEffectRate($day)
     {
-
-
+        $rate = 0;
+        return $rate;
     }
 
     // 根据生成的未来的影响率，得出价格浮动区间
@@ -130,8 +130,9 @@ class Naja
     }
 
     // 按时间顺序列出区间内的所有价格, 求出价格的转移概率/转移矩阵
-    public function computeTransitionMatrix($area){
-
+    public function computeTransitionMatrix($area)
+    {
+        // 应用了马尔科夫链
         $transitionMatrix = [];
 
 
@@ -139,9 +140,9 @@ class Naja
         return $transitionMatrix;
     }
 
-    // 根据生成的转移概率/转移矩阵求未来的价格
-    public function predictByTransitionMatrix($transitionMatrix){
-
+    // 根据生成的转移概率/转移矩阵求未来的价格 ( 用今天的转移矩阵得出明天的价格 )
+    public function predictByTransitionMatrix($transitionMatrix)
+    {
         // 应用了马尔科夫链
         $result = null;
 
