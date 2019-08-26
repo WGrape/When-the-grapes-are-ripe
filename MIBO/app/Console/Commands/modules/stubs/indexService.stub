@@ -1,0 +1,14 @@
+<?php
+
+namespace DummyNamespace;
+
+use workflowFoundation\Shared\Services\BaseService;
+
+// Director 的 index 方法 中需要使用到的业务方法
+class DummyClass extends BaseService
+{
+
+
+
+
+}

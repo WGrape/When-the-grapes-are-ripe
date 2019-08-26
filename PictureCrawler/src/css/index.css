@@ -1,0 +1,86 @@
+*{
+
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+#Container{
+
+	width: 1000px;
+	min-height:300px;
+	margin:30px auto;
+	border:1px solid #ddd;
+}
+
+	#Head{
+
+		height: 70px;
+		background: #FFF;
+		overflow: hidden;
+		padding:10px;
+		border-bottom: 1px solid #ddd;
+	}
+
+		#Left{
+
+			width: 600px;
+			height: 100%;
+			text-align: left;
+			display: inline-block;
+			float: left;
+		}
+
+		#Right{
+
+			text-align: right;
+			width: 380px;
+			height: 100%;
+			display: inline-block;
+			float: right;
+		    line-height: 70px;	
+		}
+
+			#AddTaskButton,#AllStartButton,#AllStopButton{
+
+				background:#74d058;
+				display: inline-block;
+				width: 100px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				color: #FFF;
+				border-radius: 5px;    
+				margin-left: 10px;
+			}#AddTaskButton:hover{
+
+				background: #34d058;
+				cursor: pointer;
+			}
+
+			#AllStartButton{
+
+				background: #555;
+			}#AllStartButton:hover{background: #000;cursor: pointer;}
+
+			#AllStopButton{
+
+				display: none;
+				background: #d068c1;
+			}#AllStopButton:hover{background: #d050c1;cursor: pointer;}
+
+	#Body{
+
+		min-height: 300px;
+		background: #FAFAFA;
+		padding:10px;
+	}
+
+	#Foot{
+
+		height: 30px;
+		background: #FFF;
+		border-top: 1px solid #ddd;
+		padding:10px;
+	}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/task.css">
+</head>
+<body>
+
+
+	<div id="Container">
+	
+		<section id="Head">
+			
+			<div id="Left">
+				<p style="height: 100%;line-height: 70px;font-size: 20px;text-indent: 10px;"><b>PictureCrawler</b></p>
+			</div>
+
+			<div id="Right">
+				<button id="AddTaskButton" data-task-count="0">添加任务</button>
+				<button id="AllStartButton" >全部开始</button>
+				<button id="AllStopButton" >全部暂停</button>
+			</div>
+
+		</section>		
+
+		<section id="Body">
+			
+			<ul id="TaskHead">
+				<li class="col col-1">图片名称</li>
+				<li class="col col-2" >下载数量</li>
+				<li class="col col-3" >下载进度</li>
+				<li class="col col-4" >操作选择</li>
+			</ul>
+
+			<div id="TaskContainer">
+			
+			</div>
+
+		</section>
+
+		<section id="Foot">
+			<p style="font-size: 13px;text-align: center;">&copy; By <a href="github.com/Lvsi-China">Lvsi-China</a></p>
+		</section>
+
+	</div>
+
+
+</body>
+
+<script type="text/html" id="TemplateOfTaskIsEmpty">
+	<div style="padding: 20px;text-align: center;font-size: 13px;">暂无任务</div>
+</script>
+<script type="text/html" id="TemplateOfTask" >
+	<ul class="task">
+		<li class="col col-1"><input type="text" class="input-keyword" placeholder="input ..." /></li>
+		<li class="col col-2"><input type="number" class="input-count" placeholder="input ..." /></li>
+		<li class="col col-3">
+			<div class="visualCountContainer">
+				<span class="downloadedCount">0</span> / <span class="count">0</span>
+			</div>
+			<div class="visualDownloadContainer"><span class="processBar"></span></div>
+		</li>
+		<li class="col col-4">
+			<button class="startDownloadButton" data-status="" data-count="0" data-keyword="" data-downloaded-count="0"> 开始下载</button>		
+		</li>
+	</ul>
+</script>
+
+<script src="https://cdn.bootcss.com/jquery/1.12.0/jquery.js"></script>
+
+<script src="./js/objects/Profiler.js"></script>
+<script src="./js/objects/MyWebsocket.js"></script>
+<script src="./js/objects/PictureCrawler.js"></script>
+<script src="./js/objects/Downloader.js"></script>
+<script src="./js/objects/View.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

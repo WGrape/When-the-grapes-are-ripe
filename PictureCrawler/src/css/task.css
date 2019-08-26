@@ -1,0 +1,103 @@
+ul,li{
+
+	list-style: none;padding: 0;
+}
+
+
+#TaskHead{
+
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0 18px 0;
+}
+
+	li{
+
+		display: inline-block;
+		text-align: center;
+		font-size:13px;
+	}
+
+	li.col input{
+
+		width: 90%;
+		background: none;
+		border-bottom: 1px solid #ddd;
+		height: 30px;
+		line-height: 30px;
+		outline: none;
+	}
+
+	li.col-1,li.col-2{
+
+		width:120px;border-right: 1px solid #ddd;
+	}
+
+	li.col-3{
+
+		width:500px;border-right: 1px solid #ddd;
+	}
+
+
+	.visualDownloadContainer{
+
+		display: inline-block;
+		border: 1px solid #DDD;
+		background: #DDD;
+		width: 200px;
+		border-radius: 200px;
+		height: 10px;
+		text-align: left;
+    	line-height: 10px;
+	}
+
+		.processBar{
+
+			display: inline-block;
+			border-radius: 200px;
+			height:10px;
+			background:#000;
+		}
+
+	.visualCountContainer{
+
+		margin-bottom: 7px;
+	}
+	li.col-4{
+
+		width:200px;
+	}
+
+		.col-4 button{
+
+			display: inline-block;
+			width: 80px;
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+			background: #555;
+			color: #FFF;
+			border-radius: 5px;
+		}.col-4 button:hover{
+
+			background: #333;
+			cursor: pointer;
+		}.col-4 button:disabled:hover{
+
+			background: #555;
+			cursor: not-allowed;
+		}
+
+
+#TaskContainer{
+
+
+}
+
+	#TaskContainer .task{
+
+		padding: 10px 0;
+		border-bottom: 1px solid #ddd;
+	}#TaskContainer .task:nth-child(2n){
+
+		background: #FDFDFD;
+	}
