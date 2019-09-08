@@ -11,7 +11,7 @@
 
 PHP 版本实际效果如下
 
-<img src="https://github.com/Lvsi-China/PictureCrawler/raw/master/extra/images/logo.gif">
+<img src="./extra/images/logo.gif">
 
 ```
 对于PHP版本，我使用的是 workerman，但是 workerman 在 Windows 上不支持多进程，
@@ -30,7 +30,7 @@ PHP 版本实际效果如下
 
 1. 下载本项目，并下载 [workerman](https://www.workerman.net/download)
 2. 将下载的workerman放置到如下图所示的路径中。
-<img src="https://github.com/Lvsi-China/PictureCrawler/raw/master/extra/images/workerman-location.jpg"><br/>
+<img src="./extra/images/workerman-location.jpg"><br/>
 3. 开启本地 Apache 服务器。
 4. 直接运行 index.html 文件，即可使用。
 
@@ -51,7 +51,7 @@ PHP 版本实际效果如下
 
 前端没有使用React等框架的大致架构如下
 
-<img src="https://github.com/Lvsi-China/PictureCrawler/raw/master/extra/images/FrontEndArchitecture.png">
+<img src="./extra/images/FrontEndArchitecture.png">
 
 ## ☑ 为什么有PHP和NodeJS两个语言版本 ( Why PHP & NodeJS ) ?
 
@@ -153,4 +153,4 @@ $(".task").eq(id).find(".count").text(count);
 ```
 
 ## ✔ 发行版 ( Releases)
-有 NodeJS 版本和 PHP 版本，具体的请见 [releases](https://github.com/Lvsi-China/PictureCrawler/releases)
+有 NodeJS 版本和 PHP 版本，具体的请见 [releases](https://github.com/WGrape/PictureCrawler/releases)

@@ -7,8 +7,6 @@ alert( ""||""||"s" ) // 弹出 s
 ### 编译时和运行时的区别
 怎么区分这2个概念 ？
 
-<img src="https://raw.githubusercontent.com/Lvsi-China/PublicImgs/master/2019/04/82FEBD1B4BBFC484DDB08A706CB71106.png">
-
 ```c
 // 我想到了一个很好的方法来解释这两个概念
 // 在讲的同时，顺便讲C编译型语言和PHP脚本语言的不同之处。主要看上面这个图片

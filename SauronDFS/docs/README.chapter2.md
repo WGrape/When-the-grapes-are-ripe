@@ -1,8 +1,8 @@
 # 第一章 ⇨ 分布式文件系统的基础理论
 
-- [☝ 回到首页](https://github.com/Lvsi-China/SauronDFS)
-- [第一章 ⇨ SauronDFS 使用说明](https://github.com/Lvsi-China/SauronDFS/blob/master/docs/README.chapter1.md)
-- [第三章 ⇨ 思考和总结](https://github.com/Lvsi-China/SauronDFS/blob/master/docs/README.chapter3.md)
+- [☝ 回到首页](https://github.com/WGrape/SauronDFS)
+- [第一章 ⇨ SauronDFS 使用说明](./README.chapter1.md)
+- [第三章 ⇨ 思考和总结](./README.chapter3.md)
 
 <br/>
 

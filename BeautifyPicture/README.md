@@ -15,7 +15,7 @@
 
 项目主要利用 Canvas 的绘制功能，使用 JS 和 PHP 构建。
 
-<img width="700px" src="https://github.com/Lvsi-China/BeautifyPicture/raw/master/logo.gif">
+<img width="700px" src="./logo.gif">
 
 > ### 功能会不断更新( Updating Features ) ...
 
@@ -41,5 +41,5 @@
 1. 对于图片转成 Ascii 码文字，无非是读取图片中每一个像素点的数据, 其中每一个像素点包括 R,G,B,A 这4个数据。然后根据这4个数据去使用一套算法(算法实现比较多，可以Google自行选择参考)将每个像素转成灰度的Ascii码。按照同样的方法遍历全部的像素即可。可以利用 Java, PHP, Python 等后端语言实现，也可以使用 Canvas，我使用的就是 Canvas。
 
 ## ✔ 发行版( Releases)
-目前有2个发行版，分别是 [1.0](https://github.com/Lvsi-China/BeautifyPicture/releases/tag/v-1.0) 和 [1.0.1](https://github.com/Lvsi-China/BeautifyPicture/releases/tag/v-1.0.1)，后续会更新并发行新版本 。
+目前有2个发行版，分别是 [1.0](https://github.com/WGrape/BeautifyPicture/releases/tag/v-1.0) 和 [1.0.1](https://github.com/WGrape/BeautifyPicture/releases/tag/v-1.0.1)，后续会更新并发行新版本 。
 

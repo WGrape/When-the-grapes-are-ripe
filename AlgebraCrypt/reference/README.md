@@ -12,5 +12,8 @@
 
 散列算法 使用 ：移位，与运算，异或运算等位运算，代数加减法 一起使用
 
+- [彩虹表](https://zh.wikipedia.org/wiki/%E5%BD%A9%E8%99%B9%E8%A1%A8)
+- 彩虹表就是记忆化的一个实践
+- [记忆化](https://zh.wikipedia.org/wiki/%E8%AE%B0%E5%BF%86%E5%8C%96)
 
 

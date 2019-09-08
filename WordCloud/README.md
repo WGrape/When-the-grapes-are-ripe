@@ -12,7 +12,7 @@
 
 ## 介绍
 
-在写 [EnglishKeeper](https://github.com/Lvsi-China/EnglishKeeper) 项目的时候，需要有词云功能，于是就单独先把这个 [WordCloud](https://github.com/Lvsi-China/WordCloud) 项目抽离出来了。由于是自己学习记忆单词时使用的词云工具，不能太过花哨。所以，也没在样式上花费时间，不过大家可以自己修改源码创作自己喜欢的特效。
+在写 [EnglishKeeper](https://github.com/WGrape/EnglishKeeper) 项目的时候，需要有词云功能，于是就单独先把这个 [WordCloud](https://github.com/WGrape/WordCloud) 项目抽离出来了。由于是自己学习记忆单词时使用的词云工具，不能太过花哨。所以，也没在样式上花费时间，不过大家可以自己修改源码创作自己喜欢的特效。
 
 ## 使用
 

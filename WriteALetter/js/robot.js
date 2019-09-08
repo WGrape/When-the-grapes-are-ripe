@@ -129,7 +129,7 @@
 
 			var fromDOM = "<p style='margin-bottom:7px;'><span style='font-weight:bold;font-size:18px;'>From</span> : "+ config.from +"</p>";
 			var dateDOM = "<p style='margin-bottom:7px;'><span style='font-weight:bold;font-size:18px;'>Date</span> : "+ config.date +"</p>";
-			var makeDOM = "<p style='text-align:left;'><a><img src='./images/github.png' style='width:45px;vertical-align: text-bottom;' href='https://github.com/Lvsi-China'></a><span>By</span> : <a href='https://github.com/Lvsi-China'>Lvsi-China</a>  </p>";
+			var makeDOM = "<p style='text-align:left;'><a><img src='./images/github.png' style='width:45px;vertical-align: text-bottom;' href='https://github.com/WGrape'></a><span>By</span> : <a href='https://github.com/WGrape'>WGrape</a>  </p>";
 			var $p = $("<div id='Inscribe'></div>").append(dateDOM,fromDOM,makeDOM);
 			
 			$("#"+config.domText).append($p);

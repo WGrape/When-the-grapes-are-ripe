@@ -4,7 +4,7 @@
 
 ## ✎ 摘要
 
-<img src="https://github.com/Lvsi-China/EnglishKeeper/raw/master/extra/images/logo.gif">
+<img src="./extra/images/logo.gif">
 
 ## ♨ 介绍
 
@@ -55,13 +55,13 @@
 
 #### 架构总览
 
-<img src="https://github.com/Lvsi-China/EnglishKeeper/raw/master/extra/images/Basic_Architecture.png">
+<img src="./extra/images/Basic_Architecture.png">
 
 在传统交互上，使用 Nodejs 作为服务，数据存储在 yaml 文件中(没错，不使用数据库作为持久存储)。很简单的一个经典B/S架构，并没有使用什么创新的技术。所以，技术没什么好说的，翻来覆去还是那几样，万变不离其宗，至于第三方API，这个更简单，很多公司都有对外提供API。简言之，此项目真的很简单，没什么东西，一切都是以最简单的方式去实现的，因为这只是为了方便自己学习英文而已，并不是为了体现技术水平。把技术作为工具，在合适的时候帮助我，仅此而已。
 
 #### NodeJS架构
 
-<img src="https://github.com/Lvsi-China/EnglishKeeper/raw/master/extra/images/Nodejs_Architecture.png">
+<img src="./extra/images/Nodejs_Architecture.png">
 
 由于业务简单，为避免过度封装，故以至简的风格设计。
 

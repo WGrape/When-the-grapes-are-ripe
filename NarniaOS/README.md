@@ -6,7 +6,7 @@ Linux作为优秀的开源操作系统，其最早期版本(0.11)非常值得学
 
 ## 附录
 
-<img height="300px" src="https://github.com/Lvsi-China/NarniaOS/raw/master/extra/images/Linux-kernel-version.png">
+<img height="300px" src="./extra/images/Linux-kernel-version.png">
 
 [Linux 内核的版本图](https://zh.wikipedia.org/wiki/Linux%E5%86%85%E6%A0%B8#%E7%89%88%E6%9C%AC%E5%88%97%E8%A1%A8)
 

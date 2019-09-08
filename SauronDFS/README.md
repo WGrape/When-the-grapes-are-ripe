@@ -25,11 +25,11 @@ SauronDFS 是基于Go实现的分布式文件存储系统。
 
 ## ➴ 教程（Tutorial）
 
-- [第一章 ⇨ SauronDFS 使用说明](https://github.com/Lvsi-China/SauronDFS/blob/master/docs/README.chapter1.md)
+- [第一章 ⇨ SauronDFS 使用说明](./docs/README.chapter1.md)
 
-- [第二章 ⇨ 分布式文件系统的基础理论](https://github.com/Lvsi-China/SauronDFS/blob/master/docs/README.chapter2.md)
+- [第二章 ⇨ 分布式文件系统的基础理论](./docs/README.chapter2.md)
 
-- [第三章 ⇨ 思考和总结](https://github.com/Lvsi-China/SauronDFS/blob/master/docs/README.chapter3.md)
+- [第三章 ⇨ 思考和总结](./docs/README.chapter3.md)
 
 <br>
 

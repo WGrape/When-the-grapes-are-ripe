@@ -9,7 +9,7 @@ MIBO：面向四道流程的PHP依赖开发模式（MIBO：The Development Patte
 
 ## ✎ 摘要( Synopsis )
 
-<img src="https://github.com/Lvsi-China/MIBO/raw/master/extra/images/logo.png" width="555px" >
+<img src="./extra/images/logo.png" width="555px" >
 
 ## ♨ 介绍( Introduction )
 
@@ -145,7 +145,7 @@ MIBO：面向四道流程的PHP依赖开发模式（MIBO：The Development Patte
 
 #### 2.1 在生产线上通过注入依赖的开发
 
-<img src="https://github.com/Lvsi-China/MIBO/raw/master/extra/images/logo-dependencies.png" width="450px" >
+<img src="./extra/images/logo-dependencies.png" width="450px" >
 
 ```图中的黄色箱子就是 “依赖” ```
 
