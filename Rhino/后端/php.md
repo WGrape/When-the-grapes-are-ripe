@@ -1,6 +1,10 @@
 ### 2018 PHP 面试总结
 - [2018 PHP 面试总结](https://segmentfault.com/a/1190000015651120)
 
+### PHP unset 有哪些危害
+1. 会改变索引数组的数据结构，如索引数组会变成关联数组。这样会导致在响应给前端的时候，Array 类型 变成 Object 类型。
+2. 释放的变量 和 未释放的变量 问题 。
+
 ### PHP 非阻塞的实现方法
 [PHP 非阻塞的实现方法](https://www.awaimai.com/660.html)
 
