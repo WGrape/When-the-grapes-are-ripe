@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.js"></script>
+    </head>
+    <body>
+
+        <input type="text" id ="Input" >
+        <button id="Go" >Go</button>
+
+        <script src="./answer.js"></script>
+        <script>
+
+        $(document).on("click", "#Go", function(){
+
+            console.log( findSubstringInWraproundString( $("#Input").val() ) );
+        });
+
+        </script>
+
+    </body>
+</html>
