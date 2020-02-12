@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yimutian/Lvsi/github/When-the-grapes-are-ripe/MysqlSourceReader/tools/test.c
+stdio.h
+/Users/yimutian/Lvsi/github/When-the-grapes-are-ripe/MysqlSourceReader/tools/stdio.h
+
