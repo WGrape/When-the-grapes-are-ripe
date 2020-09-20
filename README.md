@@ -1,8 +1,5 @@
 # When-the-grapes-are-ripe
-葡萄成熟时 : 问到何时葡萄先熟透，你要静候，再静候，就算失守始终要守
-
-## 说明
-已完成的项目会列举到下面的项目列表中
+When the grapes are ripe
 
 ## 项目列表
 - [Mordor: 技术落实到实现](./Mordor)
