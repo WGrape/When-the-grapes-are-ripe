@@ -24,10 +24,14 @@
                 matrix: [],
 
                 read() {
+                    while (this.deviceId !== imitate.modules.busArbiter.arbitrationPriority('dataBus', this.deviceId)) {
+                    }
                     return this.matrix[this.index++];
                 },
 
                 write(c) {
+                    while (this.deviceId !== imitate.modules.busArbiter.arbitrationPriority('dataBus', this.deviceId)) {
+                    }
                     this.matrix[this.index++] = c;
                 },
             },
@@ -46,7 +50,8 @@
                     // 信号组
                     signals: {
                         READ: 1,
-                        WRITE: 2
+                        WRITE: 2,
+                        FIND: 3,
                     },
 
                     // 从穿孔纸带读出的内容是数据还是指令
@@ -71,21 +76,24 @@
 
                     // 发送信号至内存
                     emitMemorySignal(signal, c) {
-                        if (1 === signal) {
-                            let c = imitate.modules.readWriteHead.read();
+
+                        if (this.signals.READ === signal) {
+                            let c = imitate.modules.memory.read();
                             if (this.isInstruction(c)) {
                                 imitate.modules.cpu.arithmeticLogicUnit.store('op', c);
                             } else {
                                 imitate.modules.cpu.arithmeticLogicUnit.store('status', c);
                             }
+                        } else if (this.signals.WRITE === signal) {
+                            imitate.modules.memory.write(c);
                         } else {
-                            imitate.modules.readWriteHead.write(c);
+                            imitate.modules.memory.index = c;
                         }
                     },
 
                     // 发射信号至输出设备
                     emitOutput() {
-
+                        imitate.modules.outputDevice.output();
                     }
                 },
 
@@ -137,18 +145,17 @@
 
                 deviceId: 3,
 
+                queue: [],
+
                 input(c) {
-                    // 直到获取到总线使用权
-                    while (this.deviceId !== imitate.modules.busArbiter.arbitrationPriority()) {
-                    }
-                    let controlUnit = imitate.modules.cpu.controlUnit;
-                    controlUnit.emitMemorySignal(controlUnit.signals.READ, c);
+                    this.queue.push(c);
                 }
             },
 
             // 输出设备
             outputDevice: {
                 deviceId: 4,
+                queue: [],
                 output() {
 
                 }
